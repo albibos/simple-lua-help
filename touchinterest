@@ -1,0 +1,17 @@
+--[[
+touchinterest are what allow an item such as orbs to be collected via the player touching it. 
+gladly, we have something called firetouchinterest. 
+this is best utilized by an in pairs loop. see below for example!
+--]]
+
+local playerPart = game.Players.LocalPlayer.Character.Head -- this will "touch" the part
+
+while wait() do
+for i, v in pairs(game:GetService("Workspace"):GetDescendants()) do -- checks for all touchinterest under workspace
+    if v.Name == "TouchInterest" and v.Parent then
+        firetouchinterest(playerPart, v.Parent, 0) -- fires touchinterest
+        wait(0.1)
+        firetouchinterest(playerPart, v.Parent, 1) -- fires touchinterest
+        end
+end
+end
