@@ -1,0 +1,6 @@
+-- A very simple way of this, i will make an advanced version when i make cooler-lua-help
+
+if game.PlaceId == "targetgameid" then
+  loadstring(game:HttpGet("raw script site"))()
+end
+-- you can then repeat this
