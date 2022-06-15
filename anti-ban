@@ -1,0 +1,15 @@
+--[[
+so, some games have scripts named "ModList", "AdminList" etc.
+copy all userID from this/these script and do what I do below.
+]]--
+	local AdminList = {
+    userid,
+    userid2,
+    userid3,
+    userid4,
+    userid5 -- there can be as many userid as you need.
+}
+game.Players.PlayerAdded:Connect(function(player)
+    for i, v in pairs(AdminList) do
+        if player.UserId == v then
+game:GetService("Players").LocalPlayer:Kick("Anti-Ban kicked you. Reason: Game Staff Member/Moderator joined current server.") -- change text to whatever!
