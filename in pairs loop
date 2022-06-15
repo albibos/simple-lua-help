@@ -1,0 +1,4 @@
+--[[
+for i(index), v(value) in pairs is a way to go through anything like workspace. But make sure to narrow down the qualifications like if v:IsA("BasePart") then
+as v is the thing you are looking for.
+]]--
