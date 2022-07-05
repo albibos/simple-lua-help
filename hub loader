@@ -2,5 +2,7 @@
 
 if game.PlaceId == "targetgameid" then
   loadstring(game:HttpGet("raw script site"))()
+elseif game.PlaceId == "targetgameid" then
+  loadstring(game:HttpGet("raw script site"))() -- only do the elseif and below if you have multiple games!
 end
 -- you can then repeat this
